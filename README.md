@@ -363,5 +363,6 @@ digitalWrite(M2,LOW);
 ```
 
 
+![DIY Arduino based Winding Machine](https://user-images.githubusercontent.com/19898602/141132865-ad840475-64e4-4690-9c3f-cd7074defb6e.gif)
 
 
