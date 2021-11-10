@@ -228,12 +228,17 @@ screw connectors for printed circuit boards
 
 I have designe a PCB which is multipurpose and order it from [JLCPCB](https://jlcpcb.com/IAT ) 
 
-I always prefer [JLCPCB.com](https://jlcpcb.com/IAT) for my PCB needs, [JLCPCB.com](https://jlcpcb.com/IAT) have best deals for their customers
-$2 for 1-4 Layer PCBs, free SMT assembly monthly.
+Making such projects without PCB is night mare yes trust me
+you cannot get wanted result and professional touch in your project if you ignore PCB
+So some days back I have developed my Multipurpose PCB.
+This PCB is used to build wide range of arduino projects 
 
+I have ordered PCB from [JLCPCB](https://jlcpcb.com/IAT )
 
-and this is not it if you are new customer for [JLCPCB.com](https://jlcpcb.com/IAT) you will get 18$ coupon on your
-first registration to their site its limited period offer so what are waiting for go  and get your benefit. 
+This is the link of [PCB editabl file](https://oshwlab.com/sharmaz747/multipurpose-pcb)
 
+If you seriously need quality PCB quickly in your hand then you must have to try [JLCPCB](https://jlcpcb.com/IAT ) PCB manufacturing service.
+They have Special offer of $2 for 1-4 Layer PCBs, free SMT assembly monthly.
+If new user signup today from this link [JLCPCB](https://jlcpcb.com/IAT ) you will get 30$ coupon from [JLCPCB](https://jlcpcb.com/IAT ).
 
-[Click here to visit JLCPCB.com](https://jlcpcb.com/IAT)
+![image](https://user-images.githubusercontent.com/19898602/138686998-33a08efe-93af-44e7-991a-c77a59e2c089.png)
