@@ -241,4 +241,127 @@ If you seriously need quality PCB quickly in your hand then you must have to try
 They have Special offer of $2 for 1-4 Layer PCBs, free SMT assembly monthly.
 If new user signup today from this link [JLCPCB](https://jlcpcb.com/IAT ) you will get 30$ coupon from [JLCPCB](https://jlcpcb.com/IAT ).
 
-![image](https://user-images.githubusercontent.com/19898602/138686998-33a08efe-93af-44e7-991a-c77a59e2c089.png)
+![image](https://user-images.githubusercontent.com/19898602/141130826-cbf79eb3-e20d-47a2-89ef-40edaab6523e.png)
+
+
+```javascript
+#include <Wire.h>
+#include "SSD1306Ascii.h"
+#include "SSD1306AsciiWire.h"
+#define I2C_ADDRESS 0x3C
+#define RST_PIN -1
+SSD1306AsciiWire oled;
+
+#define EN 5
+#define M1 3
+#define M2 4
+#define OUTA 9
+#define OUTB 8
+#define SW 6
+
+int state = 0;
+int statea = 0;
+int Astate = 0;
+int Alaststate = 0;
+int count = 0;
+int PWM=200;
+int startpos =120;
+int minpos=140;
+int maxpos =178;
+int pos;
+int pause = 20;
+int k;
+int encoder_pin = 2; // pulse output from the module
+
+int pulses;
+int x ;
+
+ 
+
+ 
+
+void counter()
+{
+//Update count
+pulses++;
+}
+
+void setup() {
+Wire.begin();
+Wire.setClock(400000L);
+//Serial.begin(9600);
+#if RST_PIN >= 0
+oled.begin(&Adafruit128x64, I2C_ADDRESS, RST_PIN);
+#else // RST_PIN >= 0
+oled.begin(&Adafruit128x64, I2C_ADDRESS);
+#endif // RST_PIN >= 0
+
+oled.setFont(Adafruit5x7);
+oled.clear();
+pinMode(SW, INPUT_PULLUP);
+pinMode(OUTA, INPUT);
+pinMode(OUTB, INPUT);
+pinMode(EN, OUTPUT);
+pinMode(M1, OUTPUT);
+pinMode(M2, OUTPUT);
+Alaststate = digitalRead(OUTA);
+Serial.begin(9600);
+
+pinMode(encoder_pin, INPUT);
+//Interrupt 0 is digital pin 2
+//Triggers on Falling Edge (change from HIGH to LOW)
+attachInterrupt(0, counter, RISING);
+// Initialize
+pulses = 0;
+}
+
+
+void loop() {
+motstop();
+oled.set2X();
+oled.setCursor(0, 0);
+oled.println(" TURNS");
+oled.set1X();
+oled.setCursor(0, 13);
+oled.println("---------------------");
+Astate = digitalRead(OUTA);
+if (Astate != Alaststate){
+// If the outputB state is different to the outputA state, that means the encoder is rotating clockwise
+if (digitalRead(OUTB) != Astate) {
+count ++;
+} else {
+count ++;
+}
+// Serial.print("Position: ");
+// Serial.println(count);
+oled.set2X();
+oled.setCursor(40,4);
+oled.println( count*10);
+}
+
+if(!digitalRead(SW)){
+Serial.println("START");
+motrun();
+
+}
+
+
+}
+
+
+void motrun(){
+digitalWrite(EN, HIGH);
+digitalWrite(M1,HIGH);
+digitalWrite(M2,LOW);
+}
+
+void motstop(){
+digitalWrite(EN, LOW);
+digitalWrite(M1,LOW);
+digitalWrite(M2,LOW);
+}
+```
+
+
+
+
