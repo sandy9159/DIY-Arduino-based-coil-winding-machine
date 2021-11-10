@@ -166,4 +166,74 @@ Create a suitably sized, and shaped, mounting for it, and attached the appropria
 
 ![image](https://user-images.githubusercontent.com/19898602/141130084-1c1cb633-baf4-442a-b806-a52ad7c5c468.png)
 
+# CUSTOM PCB
 
+![image](https://user-images.githubusercontent.com/19898602/129939820-49442e93-d356-4228-86be-c789daaae4a2.png)
+
+
+![image](https://user-images.githubusercontent.com/19898602/125588570-5cc527d3-79ea-40f4-8323-70093eb0e1d6.png)
+
+
+![image](https://user-images.githubusercontent.com/19898602/125588592-7213d3f4-ddb1-425a-ad33-9f070ff8d8a1.png)
+
+
+L293D = 2 pieces
+
+
+LM7809 = 1 piece
+
+
+LM7805 = 1 piece
+
+
+10.1uF electrolytic = 1 piece
+
+
+1N5408 = 1 piece
+
+
+1N4007 = 1 piece
+
+
+led = 1 piece
+
+
+resistance of at least 470 Ohm = 1 piece
+
+
+
+
+Arduino Nano = 1 piece
+
+
+Oled display = 1 piece
+
+
+Encoder = 1 piece
+
+
+A4988 controller = 2 pieces
+
+
+
+
+socket 8 + 8 = 1 piece
+
+
+PCB female pin header connectors
+
+
+screw connectors for printed circuit boards
+
+
+I have designe a PCB which is multipurpose and order it from [JLCPCB](https://jlcpcb.com/IAT ) 
+
+I always prefer [JLCPCB.com](https://jlcpcb.com/IAT) for my PCB needs, [JLCPCB.com](https://jlcpcb.com/IAT) have best deals for their customers
+$2 for 1-4 Layer PCBs, free SMT assembly monthly.
+
+
+and this is not it if you are new customer for [JLCPCB.com](https://jlcpcb.com/IAT) you will get 18$ coupon on your
+first registration to their site its limited period offer so what are waiting for go  and get your benefit. 
+
+
+[Click here to visit JLCPCB.com](https://jlcpcb.com/IAT)
